@@ -97,7 +97,11 @@
 	border-bottom: 1px solid transparent;
 	transition: all .3s;
 }
-
+@media (min-width: 831px){
+	.nav.active{
+		opacity: 0;
+	}
+}
 @media (max-width: 830px){
 	.menu__icon{
 		display: block;
