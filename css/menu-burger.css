@@ -1,0 +1,105 @@
+.menu__icon {
+	position: relative;
+	display: none;
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
+	z-index: 100;
+	transition: all 0.3s;
+}
+.menu__icon span{
+	position: absolute;
+	height: 3px;
+	top: 50%;
+	width: 30px;
+	background-color: #ff0000;
+	border-radius: 5px;
+}
+.menu__icon::before,
+.menu__icon::after{
+	content: "";
+	position: absolute;
+	height: 3px;
+	width: 30px;
+	background-color: #ff0000;
+	border-radius: 5px;
+	left: 0;
+	transition: all .3s;
+}
+.menu__icon::before{
+	top: 5px;
+}
+.menu__icon::after{
+	bottom: 2px;
+}
+.menu__icon.active span{
+	display: none;
+}
+.menu__icon.active::after{
+	background-color: #000;
+	top: 50%;
+	transform: rotate(45deg);
+}
+.menu__icon.active::before{
+	background-color: #000;
+	top: 50%;
+	transform: rotate(-45deg);
+}
+
+
+.nav {
+	padding: 30px 0;
+	background-color: #fff;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: all .3s;
+	pointer-events: none;
+}
+.nav.active{
+	opacity: 1;
+	pointer-events: all;
+}
+.nav__list {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 25px;
+}
+.nav__item {
+}
+.nav__item:not(:last-child){
+	margin-bottom: 25px;
+}
+.nav__link {
+	font-size: 24px;
+	font-weight: 700;
+	color: #000;
+}
+.phone__body{
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.phone__body__item{
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 133%;
+	color: #000;
+	border-bottom: 1px solid transparent;
+	transition: all .3s;
+}
+
+@media (max-width: 830px){
+	.menu__icon{
+		display: block;
+	}
+}
