@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Тепло Земли - Центр энергосберегающих технологий </title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/menu-burger.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,45 +19,32 @@
                     <a class="logo" href="index.html">
                         <img src="img/logo.svg" alt="Logo">
                     </a>
-                    <nav class="header__menu menu">
-                        <ul class="menu__list">
-                            <li class="menu__item">
-                                <a class="menu__link" href="">ГНБ - ПРОКОЛ ГРУНТА</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="">ПРЕИМУЩЕСТВА</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="">КОНТАКТЫ</a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <div class="header__menu menu">
+                        <div class="menu__icon">
+                            <span></span>
+                        </div>
+                        <nav class="menu__body">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#" data-goto=".gnb">ГНБ - ПРОКОЛ ГРУНТА</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#" data-goto=".advantages">ПРЕИМУЩЕСТВА</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#" data-goto=".contacts">КОНТАКТЫ</a>
+                                </li>
+                            </ul>
+                            <div class="menu__phone">
+                                <a class="menu__phone-item" href="tel:+79022914181">+7 (902) 291-41-81</a>
+                                <a class="menu__phone-item" href="tel:+79272060525">+7 (927) 206-05-25</a>
+                            </div>
+                        </nav>
+                    </div>
                     <div class="header__phone phone-box">
                         <a class="phone-box__item" href="tel:+79022914181">+7 (902) 291-41-81</a>
                         <a class="phone-box__item" href="tel:+79272060525">+7 (927) 206-05-25</a>
                     </div>
-                    <div class="menu__icon">
-                        <span></span>
-                    </div>
-                    <nav class="nav">
-                        <div class="nav__body">
-                            <ul class="nav__list">
-                                <li class="nav__item">
-                                    <a class="nav__link" href="#">ГНБ - ПРОКОЛ ГРУНТА</a>
-                                </li>
-                                <li class="nav__item">
-                                    <a class="nav__link" href="#">ПРЕИМУЩЕСТВА</a>
-                                </li>
-                                <li class="nav__item">
-                                    <a class="nav__link" href="#">КОНТАКТЫ</a>
-                                </li>
-                            </ul>
-                            <div class="phone__body">
-                                <a class="phone__body__item" href="tel:+79022914181">+7 (902) 291-41-81</a>
-                                <a class="phone__body__item" href="tel:+79272060525">+7 (927) 206-05-25</a>
-                            </div>
-                        </div>
-                    </nav>
                 </div>
             </div>
         </header>
@@ -69,17 +55,15 @@
                 </div>
             </div>
         </section>
-        <section class="services">
+        <section class="services scrollto">
             <div class="container">
                 <h2 class="services__title title">Услуги</h2>
                 <p class="services__text">ООО <span>«Тепло Земли»</span> предоставляет полный комплекс работ по следующим направлениям:</p>
                 <div class="services__body">
-                    <a href="">
-                        <div class="services__item">
-                            <h3 class="services__item-title">Прокладка трубопроводов методом ГНБ</h3>
-                            <button class="services__item-btn">Подробнее</button>
-                        </div>
-                    </a>
+                    <div class="services__item">
+                        <h3 class="services__item-title">Прокладка трубопроводов методом ГНБ</h3>
+                        <a class="services__item-btn services__link" href="#gnb" >Подробнее</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -164,7 +148,7 @@
                 </div>
             </div>
         </section>
-        <section class="gnb">
+        <section class="gnb"  id="gnb">
             <div class="container">
                 <h2 class="gnb__title title">Горизонтально-направленное <br> бурение</h2>
                 <div class="gnb__body">
@@ -201,17 +185,18 @@
                         </div>
                         <ul class="social">
                             <li class="social__item">
-                                <a class="social__link" href="#">
+                                <a class="social__link" href="https://wa.me/79272065099" target="_blank">
                                     <img src="img/social/whatsapp.svg" alt="whatsapp">
                                 </a>
                             </li>
                             <li class="social__item">
-                                <a class="social__link" href="#">
+                                <a class="social__link" href="https://t.me/">
                                     <img src="img/social/telegram.svg" alt="telegram">
                                 </a>
                             </li>
                             <li class="social__item">
-                                <a class="social__link" href="#">
+                                <a class="social__link" href="https://vk.com/public176727105" target="_blank
+                                ">
                                     <img src="img/social/vk.svg" alt="vk">
                                 </a>
                             </li>
@@ -239,6 +224,5 @@
     </div>
 
     <script src="js/main.js"></script>
-    <script src="js/menu-burger.js"></script>
 </body>
 </html>
